@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.epic.localmusicnoserver">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- Request legacy Bluetooth permissions on older devices. -->
+    <uses-permission
+        android:name="android.permission.BLUETOOTH"
+        android:maxSdkVersion="30" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+    <uses-permission
+        android:name="android.permission.BLUETOOTH_PRIVILEGED"
+        tools:ignore="ProtectedPermissions" />
+
+    <!-- Needed only if your app makes the device discoverable to Bluetooth
+         devices. -->
+    <uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE" />
+
+    <!-- Needed only if your app communicates with already-paired Bluetooth
+         devices. -->
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+
+    <!-- Not needed if you can strongly assert that your app never derives
+         physical location from Bluetooth scan results and doesn't need location
+         access for any other purpose. -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <uses-permission-sdk-23 android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="com.epic.localmusicnoserver.util.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/music_app"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name="com.epic.localmusicnoserver.activity.WelcomeActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.epic.localmusicnoserver.activity.HomeActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.epic.localmusicnoserver.BlueTooth.BlueToothActivity"
+            android:label="蓝牙设备"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.AppTheme" />
+
+        <activity
+            android:name="com.epic.localmusicnoserver.activity.ScanActivity"
+            android:label="@string/scan_music"
+            android:launchMode="standard"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.epic.localmusicnoserver.activity.LocalMusicActivity"
+            android:label="@string/local_music"
+            android:launchMode="standard"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name="com.epic.localmusicnoserver.service.MusicPlayerService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <receiver
+            android:name="com.epic.localmusicnoserver.receiver.PlayerManagerReceiver"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name="com.epic.localmusicnoserver.activity.PlayActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/PlaylistActivityTheme" />
+
+        <activity
+            android:name="com.epic.localmusicnoserver.activity.LastMyloveActivity"
+            android:label="@string/last_play"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.epic.localmusicnoserver.activity.PlaylistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/PlaylistActivityTheme" />
+
+        <activity
+            android:name="com.epic.localmusicnoserver.activity.ModelActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait" />
+
+
+        <activity
+            android:name="com.epic.localmusicnoserver.activity.ThemeActivity"
+            android:label="@string/theme_center"
+            android:launchMode="standard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.epic.localmusicnoserver.activity.AboutActivity"
+            android:label="@string/about"></activity>
+    </application>
+
+</manifest>
