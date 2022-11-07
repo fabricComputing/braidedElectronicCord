@@ -6,7 +6,7 @@ A multichannel capacitance-analyzing circuit with a Bluetooth module (Zhihe 01RC
 
 ## Dataset
 
-We provide the interaction dataset for testing and validation in the [raw_mini](https://github.com/fabricComputing/braidedElectronicCord/tree/main/raw_mini) folder.
+We provide part of the interaction dataset for testing and validation in the [raw_mini](https://github.com/fabricComputing/braidedElectronicCord/tree/main/raw_mini) folder.
 
 There are one hundred sets of data under each interactive command.
 
@@ -21,21 +21,17 @@ There are one hundred sets of data under each interactive command.
 | sj    | double click        |
 | zw    | grab                |
 
-## Main code
+## Core code
 
 ### Data preprocessing
 
-In this part, complete the extraction of actions, label them, and generate training data
+In this part, you need to complete the extraction of actions, label them, extract features and generate training data.
 
-1. [get1_start_index.py](https://github.com/fabricComputing/braidedElectronicCord/blob/main/code/get1_start_index.py)
-2. [get2_csv_plo.py](https://github.com/fabricComputing/braidedElectronicCord/blob/main/code/get2_csv_plo.py)
-3. [get3_data_train.py](https://github.com/fabricComputing/braidedElectronicCord/blob/main/code/get3_data_train.py)
+### Training the model
 
-### Model training
-
-4. [train4_LSTM.py](https://github.com/fabricComputing/braidedElectronicCord/blob/main/code/train4_LSTM.py)
-5. [train5_ML.py](https://github.com/fabricComputing/braidedElectronicCord/blob/main/code/train5_ML.py)
-6. [train6_autoML.py](https://github.com/fabricComputing/braidedElectronicCord/blob/main/code/train6_autoML.py)
+1. [train4_LSTM.py](https://github.com/fabricComputing/braidedElectronicCord/blob/main/code/train4_LSTM.py)
+2. [train5_ML.py](https://github.com/fabricComputing/braidedElectronicCord/blob/main/code/train5_ML.py)
+3. [train6_autoML.py](https://github.com/fabricComputing/braidedElectronicCord/blob/main/code/train6_autoML.py)
 
 ### Interactive application implementation 
 
