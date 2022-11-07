@@ -6,7 +6,7 @@ A multichannel capacitance-analyzing circuit with a Bluetooth module (Zhihe 01RC
 
 ## Dataset
 
-We provide the interaction dataset for testing and validation in the raw_mini folder.
+We provide the interaction dataset for testing and validation in the [raw_mini](https://github.com/fabricComputing/braidedElectronicCord/tree/main/raw_mini) folder.
 
 There are one hundred sets of data under each interactive command.
 
@@ -23,7 +23,7 @@ There are one hundred sets of data under each interactive command.
 
 ## Main code
 
-### data preprocessing
+### Data preprocessing
 
 In this part, complete the extraction of actions, label them, and generate training data
 
@@ -31,7 +31,22 @@ In this part, complete the extraction of actions, label them, and generate train
 2. [get2_csv_plo.py](https://github.com/fabricComputing/braidedElectronicCord/blob/main/code/get2_csv_plo.py)
 3. [get3_data_train.py](https://github.com/fabricComputing/braidedElectronicCord/blob/main/code/get3_data_train.py)
 
-## model training
+### Model training
 
-LSTM
+4. [train4_LSTM.py](https://github.com/fabricComputing/braidedElectronicCord/blob/main/code/train4_LSTM.py)
+5. [train5_ML.py](https://github.com/fabricComputing/braidedElectronicCord/blob/main/code/train5_ML.py)
+6. [train6_autoML.py](https://github.com/fabricComputing/braidedElectronicCord/blob/main/code/train6_autoML.py)
 
+### Interactive application implementation 
+
+[MusicPlayer](https://github.com/fabricComputing/braidedElectronicCord/tree/main/code/MusicPlayer)
+
+Functions：
+
+-   WebSocket communication
+-   Bluetooth communication
+-   Control music interface
+  -   Status: Playing, Pausing
+  -   Cut Songs: Previous, Next
+  -   Volume: increase, decrease
+  -   List: Shuffle, Loop Single, Sequential Play
