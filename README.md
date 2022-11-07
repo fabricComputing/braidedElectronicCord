@@ -21,7 +21,7 @@ There are one hundred sets of data under each interactive command.
 | sj    | double click        |
 | zw    | grab                |
 
-If you have higher demand for the dataset, please contact us (braided_cord@163.com)
+
 
 ## Core code
 
@@ -49,3 +49,6 @@ Functions：
   -   Volume: increase, decrease
   -   List: Shuffle, Loop Single, Sequential Play
 
+
+
+If you want to know more information about the Repo, please contact braided_cord@163.com.
