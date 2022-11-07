@@ -21,11 +21,13 @@ There are one hundred sets of data under each interactive command.
 | sj    | double click        |
 | zw    | grab                |
 
+If you have higher demand for the dataset, please contact us (braided_cord@163.com)
+
 ## Core code
 
 ### Data preprocessing
 
-In this part, you need to complete the extraction of actions, label them, extract features and generate training data.
+In this part, it is necessary to complete the extraction of actions, label them, extract features and generate training data.
 
 ### Training the model
 
@@ -46,3 +48,4 @@ Functions：
   -   Cut Songs: Previous, Next
   -   Volume: increase, decrease
   -   List: Shuffle, Loop Single, Sequential Play
+
