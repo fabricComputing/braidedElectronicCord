@@ -29,9 +29,9 @@ In this part, you need to complete the extraction of actions, label them, extrac
 
 ### Training the model
 
-1. [train4_LSTM.py](https://github.com/fabricComputing/braidedElectronicCord/blob/main/code/train4_LSTM.py)
-2. [train5_ML.py](https://github.com/fabricComputing/braidedElectronicCord/blob/main/code/train5_ML.py)
-3. [train6_autoML.py](https://github.com/fabricComputing/braidedElectronicCord/blob/main/code/train6_autoML.py)
+1. [train1_LSTM.py](https://github.com/fabricComputing/braidedElectronicCord/blob/main/code/train1_LSTM.py)
+2. [train2_ML.py](https://github.com/fabricComputing/braidedElectronicCord/blob/main/code/train2_ML.py)
+3. [train3_autoML.py](https://github.com/fabricComputing/braidedElectronicCord/blob/main/code/train3_autoML.py)
 
 ### Interactive application implementation 
 
